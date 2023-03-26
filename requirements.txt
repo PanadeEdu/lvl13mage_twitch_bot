@@ -1,0 +1,5 @@
+irc.bot
+requests
+twitchio
+keyboard
+pyautogui
