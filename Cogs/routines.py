@@ -8,7 +8,7 @@ class Routines(commands.Cog):
     @routines.routine(minutes=3)
     async def notifier(self):
         try:
-            await self.bot.connected_channels[0].send(f'Ganz sicher keine geheime Commands mit ?help zu sehen. Kappa')
+            await self.bot.connected_channels[0].send(f'Ich habe ein paar besondere Commands am laufen. Schaue mal unten in die Streambeschreibung.')
         except:
             print("Error while sending message to twitch chat.")
     notifier.start()

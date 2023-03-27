@@ -17,25 +17,27 @@ class CmdGeneral(commands.Cog):
         if len(message_params) > 1:
             help_option = message_params[1]
 
-        await ctx.send(f'Auf garkeinen Fall folgende Commands verwenden NotLikeThis :')
-        if help_option == 'None':
-            # send help for all commands
-            await ctx.send(CmdGeneral.getHelp())
-            await ctx.send(CmdMouse.getHelp())
-            await ctx.send(CmdKeyboard.getHelp())
-            await ctx.send(CmdMechabellum.getHelp())
-        elif help_option == 'general':
-            # send help for general commands
-            await ctx.send(CmdGeneral.getHelp())
-        elif help_option == 'mouse':
-            # send help for mouse commands
-            await ctx.send(CmdMouse.getHelp())
-        elif help_option == 'keyboard':
-            # send help for keyboard commands
-            await ctx.send(CmdKeyboard.getHelp())
-        elif help_option == 'mechabellum':
-            # send help for mechabellum commands
-            await ctx.send(CmdMechabellum.getHelp())
+        await ctx.send(f'Hey {ctx.author.name}, ich habe ein paar experimentelle Commands, die mein Leben...spannender...machen. Schau am besten mal in die Command Sektion der Streambeschreibung nach.')
+        await ctx.send(f'Folgende Commands kannst du verwenden: ?count, ?scoreboard, ?jump, ?buyshield, ?buyrocket, ?buyunit <slot number>, ?mrandom, ?mleft, ?mright, ?mup, ?mdown')
+        #await ctx.send(f'Auf garkeinen Fall folgende Commands verwenden NotLikeThis :')
+        #if help_option == 'None':
+        #    # send help for all commands
+        #    await ctx.send(CmdGeneral.getHelp())
+        #    await ctx.send(CmdMouse.getHelp())
+        #    await ctx.send(CmdKeyboard.getHelp())
+        #    await ctx.send(CmdMechabellum.getHelp())
+        #elif help_option == 'general':
+        #    # send help for general commands
+        #    await ctx.send(CmdGeneral.getHelp())
+        #elif help_option == 'mouse':
+        #    # send help for mouse commands
+        #    await ctx.send(CmdMouse.getHelp())
+        #elif help_option == 'keyboard':
+        #    # send help for keyboard commands
+        #    await ctx.send(CmdKeyboard.getHelp())
+        #elif help_option == 'mechabellum':
+        #    # send help for mechabellum commands
+        #    await ctx.send(CmdMechabellum.getHelp())
 
     @commands.command()
     async def count(self, ctx: commands.Context):

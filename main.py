@@ -4,6 +4,7 @@ from Cogs.cmdGeneral import CmdGeneral
 from Cogs.cmdMouse import CmdMouse
 from Cogs.cmdKeyboard import CmdKeyboard
 from Cogs.cmdMechabellum import CmdMechabellum
+from Cogs.routines import Routines
 import json
 from pprint import pprint
 
@@ -15,6 +16,9 @@ config = json.load(config)
 
 print('Starting TwioBot...')
 bot = Bot(config)
+
+print('Loading Routines...')
+bot.add_cog(Routines(bot, users))
 
 print('Loading CmdGeneral...')
 bot.add_cog(CmdGeneral(bot, users))
