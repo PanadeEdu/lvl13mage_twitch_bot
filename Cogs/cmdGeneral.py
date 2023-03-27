@@ -17,8 +17,7 @@ class CmdGeneral(commands.Cog):
         if len(message_params) > 1:
             help_option = message_params[1]
 
-        await ctx.send(f'Hey {ctx.author.name}, ich habe ein paar experimentelle Commands, die mein Leben...spannender...machen. Schau am besten mal in die Command Sektion der Streambeschreibung nach.')
-        await ctx.send(f'Folgende Commands kannst du verwenden: ?count, ?scoreboard, ?jump, ?buyshield, ?buyrocket, ?buyunit <slot number>, ?mrandom, ?mleft, ?mright, ?mup, ?mdown')
+        await ctx.send(f'Hey {ctx.author.name}, einen besonderen Bot am laufen. Mehr Infos: https://commands.lvl13mage.live')
         #await ctx.send(f'Auf garkeinen Fall folgende Commands verwenden NotLikeThis :')
         #if help_option == 'None':
         #    # send help for all commands
