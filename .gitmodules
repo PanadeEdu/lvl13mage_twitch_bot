@@ -1,0 +1,3 @@
+[submodule "docs/lvl13mage_doc/themes/hugo-bearcub"]
+	path = docs/lvl13mage_doc/themes/hugo-bearcub
+	url = https://github.com/clente/hugo-bearcub

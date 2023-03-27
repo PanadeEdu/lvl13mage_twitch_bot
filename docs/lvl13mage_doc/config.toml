@@ -1,0 +1,9 @@
+baseURL = 'https://lvl13mage.live/'
+languageCode = 'en-us'
+title = 'theLvl13Mage'
+theme = 'hugo-bearcub'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
